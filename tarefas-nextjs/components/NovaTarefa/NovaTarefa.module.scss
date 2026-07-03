@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--texto);
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &::placeholder {
+      color: var(--texto-secundario);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--primario);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primario);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+
+    &:hover {
+      background-color: var(--primario-hover);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    input {
+      font-size: 0.95rem;
+    }
+
+    button {
+      width: auto;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    input {
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+    }
+  }
+}

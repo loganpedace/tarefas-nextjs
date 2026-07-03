@@ -1,0 +1,42 @@
+:root {
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --texto: #1a1a2e;
+  --texto-secundario: #6b7280;
+  --borda: #e5e7eb;
+  --primario: #3b82f6;
+  --primario-hover: #2563eb;
+  --sucesso: #10b981;
+  --sucesso-hover: #059669;
+  --perigo: #ef4444;
+  --perigo-hover: #dc2626;
+  --aviso: #f59e0b;
+  --aviso-hover: #d97706;
+  --hover: #f9fafb;
+  --sombra: rgba(0, 0, 0, 0.06);
+}
+
+[data-tema='escuro'] {
+  --bg: #070b14;
+  --card: #0d1117;
+  --texto: #e2e8f0;
+  --texto-secundario: #64748b;
+  --borda: #1e2a3a;
+  --hover: #111827;
+  --sombra: rgba(0, 0, 0, 0.5);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+  background-color: var(--bg);
+  color: var(--texto);
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,35 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2.5rem;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+  }
+}

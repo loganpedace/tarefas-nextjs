@@ -1,0 +1,25 @@
+.botao {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background-color: var(--card);
+    color: var(--texto);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+    &:hover {
+        background-color: var(--hover);
+    }
+
+    @media (min-width: 768px) {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
