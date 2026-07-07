@@ -31,7 +31,7 @@ jobs:
         run: npm run lint
 
       - name: Rodar testes
-        run: npm run test -- --passWithNoTests
+        run: npm run test -- --watchAll=false --passWithNoTests
 
       - name: Rodar build
         run: npm run build
