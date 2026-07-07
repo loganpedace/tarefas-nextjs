@@ -113,3 +113,12 @@ tarefas-nextjs/
 | hooks/useContadorDeTarefas | 100% | 100% | 100% | 100% |
 | hooks/useTema | 100% | 88% | 100% | 100% |
 | lib/tarefas.ts | 100% | 100% | 100% | 100% |
+
+## 💻 CI/CD
+
+Este projeto conta com uma pipeline automatizada via GitHub Actions:
+
+- **CI**: a cada push ou pull request na branch `main`, o pipeline instala as dependências, roda o ESLint, executa os testes e faz o build do projeto.
+- **CD**: a cada push na branch `main` (após o CI passar), a aplicação é publicada automaticamente na Vercel.
+
+🔗 Site publicado: https://tarefas-nextjs-blush.vercel.app/
